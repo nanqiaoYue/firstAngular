@@ -1,0 +1,42 @@
+<app-navigation></app-navigation>
+<!--<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">
+        <i class="glyphicon glyphicon-time"></i>
+        计划板
+      </a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">首页</a></li>
+        <li><a href="#">计划列表</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>-->
+
+<div class="container">
+  <div class="col-sm-3">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h1 class="text-center">已有时长</h1>
+      </div>
+      <div class="panel-body">
+        <h1 class="text-center">{{ planService.getTotalTime }} 小时</h1>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-9">
+    <router-outlet></router-outlet>
+    <!--<div class="jumbotron">
+      <h1>任务追踪</h1>
+      <p>
+        <strong>
+          <a href="#">创建一个任务</a>
+        </strong>
+      </p>
+    </div>-->
+  </div>
+</div>
